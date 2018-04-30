@@ -1,0 +1,29 @@
+{
+    "name": "mykecalderon/clean-architecture",
+    "description": "Clean Architecture example in PHP",
+    "keywords": ["architecture"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shop\\": "src/Shop"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
